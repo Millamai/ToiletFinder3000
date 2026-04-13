@@ -12,8 +12,8 @@
         public string Number { get; set; }
         public string PostCode { get; set; }
 
-        public double Longitude;
-        public double Latitude;
+        public double Longitude { get; set; }
+        public double Latitude { get; set; } 
 
 
         //Constrcutor

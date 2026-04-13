@@ -16,6 +16,13 @@ namespace ToiletFinder3000.Repository
 
             //Vi tilføjer nogle toiletter til listen her
 
+            Address a = new Address("Jernbanegade", "3A", "4000", "Roskilde", 55.639087200917885, 12.087914569309898);
+            Toilet t = new Toilet("Roskilde st.", a);
+            _toiletList.Add(t);
+
+            a = new Address("Frederiksborgvej", "21", "4000", "Roskilde", 55.64610006169917, 12.081469522089265);
+            t = new Toilet("Byparken", a);
+            _toiletList.Add(t);
 
         }
         public void Add(Toilet toilet)
@@ -30,7 +37,7 @@ namespace ToiletFinder3000.Repository
 
         public List<Toilet> GetAll()
         {
-            throw new NotImplementedException();
+            return _toiletList;
         }
 
         public Toilet GetById(int id)
