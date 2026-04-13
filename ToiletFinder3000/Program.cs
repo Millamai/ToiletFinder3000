@@ -1,3 +1,5 @@
+using ToiletFinder3000.Repository;
+
 namespace ToiletFinder3000
 {
     public class Program
@@ -8,7 +10,7 @@ namespace ToiletFinder3000
 
             // Add services to the container.
             builder.Services.AddRazorPages();
-
+            builder.Services.AddSingleton<IToiletRepository, ToiletRepository>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
