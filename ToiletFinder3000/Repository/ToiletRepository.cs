@@ -27,7 +27,7 @@ namespace ToiletFinder3000.Repository
         }
         public void Add(Toilet toilet)
         {
-            throw new NotImplementedException();
+            _toiletList.Add(toilet);
         }
 
         public void Delete(int id)

@@ -1,0 +1,41 @@
+﻿@page
+@model ToiletFinder3000.Pages.CreateToiletModel
+@{
+}
+
+
+<form class="needs-validation" novalidate method="post">
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationTooltip01">Sted</label>
+      <input type="text" class="form-control" id="validationTooltip01" asp-for="Name" required>
+      
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationTooltip02">Vejnavn</label>
+      <input type="text" class="form-control" id="validationTooltip02" asp-for="StreetName"  required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationTooltip02">Husnummer</label>
+      <input type="text" class="form-control" id="validationTooltip02" asp-for="HouseNumber"  required>
+    </div>
+
+        <div class="col-md-4 mb-3">
+            <label for="validationTooltip02">Postnummer</label>
+            <input type="text" class="form-control" id="validationTooltip02" asp-for="PostCode" required>
+        </div>
+        <div class="col-md-4 mb-3">
+            <label for="validationTooltip02">By</label>
+            <input type="text" class="form-control" id="validationTooltip02" asp-for="City" required>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <label for="validationTooltip02">Longitude</label>
+            <input type="text" class="form-control" id="validationTooltip02" asp-for="Longitude" required>
+        </div>
+        <div class="col-md-4 mb-3">
+            <label for="validationTooltip02">Lattitude</label>
+            <input type="text" class="form-control" id="validationTooltip02" asp-for="Latitude" required>
+        </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
