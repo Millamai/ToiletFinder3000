@@ -18,7 +18,10 @@
 <div class="card mb-3">
     <div class="card-body">
         <div class="d-flex flex-column flex-lg-row">
-            <span class="avatar avatar-text rounded-3 me-4 mb-2">@item.Nickname</span>
+            <span class="avatar avatar-text rounded-3 me-4 mb-2">
+                    <a asp-page="Details" asp-route-id="@item.Id">@item.Nickname</a>
+
+               </span>
             <div class="row flex-fill">
                     @* <div class="star-rating animated-stars">
                         <input type="radio" id="star5" name="rating" value="5">
@@ -32,7 +35,7 @@
                         <input type="radio" id="star1" name="rating" value="1">
                         <label for="star1" class="bi bi-star-fill"></label>
                     </div> *@
-                    <form method="post" asp-page-handler="AddRating">
+                  @*   <form method="post" asp-page-handler="AddRating">
                         
                     <select name="rate">
                         <option>1</option>
@@ -45,7 +48,7 @@
 
                     </form>
 
-             <form method="post"><input type="submit"  value="Delete"></form>
+             <form method="post"><input type="submit"  value="Delete"></form> *@
             </div>
         </div>
     </div>
