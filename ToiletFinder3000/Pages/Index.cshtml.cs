@@ -12,10 +12,11 @@ namespace ToiletFinder3000.Pages
         public List<Toilet> Toilets { get; set; }
         private readonly ILogger<IndexModel> _logger;
 
-        public IndexModel(ILogger<IndexModel> logger, IToiletRepository toiletRepository)
+        public IndexModel(ILogger<IndexModel> logger, ToiletService service)
         {
             _logger = logger;
-            Toilets = toiletRepository.GetAll();
+            //      Toilets = toiletRepository.GetAll();
+            Toilets = service.GetAll();
 
         }
 
